@@ -10,5 +10,5 @@ test("1 returns one", () => {
 });
 
 test("1, 2 returns 3", () => {
-  expect(add("1, 10, 1, 1\n3")).toBe(16);
+  expect(add("1, 10, 1, 1\n4")).toBe(17);
 });
