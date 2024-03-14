@@ -1,5 +1,4 @@
 export function add(str) {
-  return str
-    .split(/[:,\n]/)
-    .reduce((total, num) => total + parseFloat(num || 0), 0);
+  var delimeter = str.split(/[:,\n, ; ]/);
+  return delimeter.reduce((total, num) => total + parseFloat(num || 0), 0);
 }
