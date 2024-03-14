@@ -5,7 +5,7 @@ export function add(str) {
   if (str.length == 1) {
     return 1;
   }
-  let strArr = str.split(",");
+  let strArr = str.split(/[:,\n]/);
   let sum = strArr.reduce(function (total, num) {
     return parseFloat(total) + parseFloat(num);
   });
